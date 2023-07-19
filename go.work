@@ -1,0 +1,6 @@
+go 1.20
+
+use (
+	./hw02_fix_app
+	./hw03_chessboard
+)

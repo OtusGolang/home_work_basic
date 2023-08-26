@@ -1,15 +1,13 @@
 package printer
 
 import (
-	"github.com/fixme_my_friend/hw02_fix_app/types"
+	"fmt"
+
+	"github.com/AlexSH61/home_work_basic/types"
 )
 
-func PrintStaff(staff types.Employee) {
-	var str string
+func PrintStaff(staff []types.Employee) {
 	for i := 0; i < len(staff); i++ {
-		str := fmt.Sprintf("User ID: %d; Age: %d; Name: %s; Department ID: %d; ", staff[i].UserID, staff[i].Age, staff[i].Name, staff[i].DepartmentID)
-		fmt.Println(str)
+		fmt.Println(staff[i])
 	}
-
-	fmt.Println(str)
 }

@@ -1,4 +1,4 @@
-module github.com/fixme_my_friend/hw02_fix_app
+module github.com/l1vesey/home_work_basic/tree/master/hw02_fix_app
 
 go 1.20
 

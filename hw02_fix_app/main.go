@@ -1,10 +1,11 @@
 package init
 
 import (
-	"github.com/fixme_my_friend/hw02_fix_app/printer"
-	"github.com/fixme_my_friend/hw02_fix_app/reader"
-	"github.com/fixme_my_friend/hw02_fix_app/types"
 	"fmt"
+
+	"github.com/l1vesey/home_work_basic/tree/master/hw02_fix_app/printer"
+	"github.com/l1vesey/home_work_basic/tree/master/hw02_fix_app/reader"
+	"github.com/l1vesey/home_work_basic/tree/master/hw02_fix_app/types"
 )
 
 func init() {

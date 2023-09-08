@@ -16,9 +16,9 @@ func main() {
 	fmt.Println(x, "*", y)
 
 	for i := 0; i < x; {
-
 		for j := 0; j < y; {
 			summ := j + i
+
 			if summ%2 == 0 {
 				fmt.Print("   ")
 			} else {

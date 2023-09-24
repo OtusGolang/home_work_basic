@@ -2,17 +2,17 @@ go 1.20
 
 use (
 	./hw02_fix_app
-	./hw03_chessboard
-	./hw04_struct_comparator
-	./hw05_shapes
-	./hw06_testing
-	./hw07_word_counter
-	./hw08_binary_search
-	./hw09_serialize
-	./hw10_motion_sensor
-	./hw11_worker_pool
-	./hw12_log_util
-	./hw13_http
-	./hw15_go_sql
-	./hw16_docker
+	// ./hw03_chessboard
+	// ./hw04_struct_comparator
+	// ./hw05_shapes
+	// ./hw06_testing
+	// ./hw07_word_counter
+	// ./hw08_binary_search
+	// ./hw09_serialize
+	// ./hw10_motion_sensor
+	// ./hw11_worker_pool
+	// ./hw12_log_util
+	// ./hw13_http
+	// ./hw15_go_sql
+	// ./hw16_docker
 )

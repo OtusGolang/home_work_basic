@@ -3,12 +3,14 @@
         "userId": 10,
         "age": 25,
         "name": "Rob",
-        "departmentId": 3
+        "departmentId": 3,
+        "firstname": "Golang"
     },
     {
         "userId": 11,
         "age": 30,
         "name": "George",
-        "departmentId": 2
+        "departmentId": 2,
+        "firstname": "Golang"
     }
 ]

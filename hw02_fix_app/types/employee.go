@@ -7,9 +7,9 @@ type Employee struct {
 	Age          int    `json:"age"`
 	Name         string `json:"name"`
 	DepartmentID int    `json:"departmentId"`
-	///FirstName    string `json:"firstName"`
+	FirstName    string `json:"firstName"`
 }
 
 func (e Employee) String() string {
-	return fmt.Sprintf("UserId: %d; Age: %d; Name: %s; DepartmentId: %d;", e.UserID, e.Age, e.Name, e.DepartmentID)
+	return fmt.Sprintf("UserId: %d; Age: %d; Name: %s; DepartmentId: %d; FirstName: %s;", e.UserID, e.Age, e.Name, e.DepartmentID, e.FirstName)
 }

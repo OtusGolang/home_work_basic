@@ -8,7 +8,7 @@ import (
 	"github.com/fixme_my_friend/hw02_fix_app/types"
 )
 
-func ReadJSON(filePath string, limit int) ([]types.Employee, error) {
+func ReadJSON(filePath string) ([]types.Employee, error) {
 	f, err := os.Open(filePath)
 	if err != nil {
 		return nil, err

@@ -6,6 +6,7 @@ type Employee struct {
 	UserID       int    `json:"user_id"`
 	Age          int    `json:"age"`
 	Name         string `json:"name"`
+	FirstName    string `json:"first_name"`
 	DepartmentID int    `json:"department_id"`
 }
 

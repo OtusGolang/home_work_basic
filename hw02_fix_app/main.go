@@ -1,13 +1,14 @@
-package init
+package main
 
 import (
-	"github.com/fixme_my_friend/hw02_fix_app/printer"
-	"github.com/fixme_my_friend/hw02_fix_app/reader"
-	"github.com/fixme_my_friend/hw02_fix_app/types"
 	"fmt"
+
+	"github.com/krupovroman/home_work_basic/hw02_fix_app/printer"
+	"github.com/krupovroman/home_work_basic/hw02_fix_app/reader"
+	"github.com/krupovroman/home_work_basic/hw02_fix_app/types"
 )
 
-func init() {
+func main() {
 	var path string = "data.json"
 
 	fmt.Printf("Enter data file path: ")

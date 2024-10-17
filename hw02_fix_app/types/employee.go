@@ -3,12 +3,12 @@ package types
 import "fmt"
 
 type Employee struct {
-	UserID       int    `json:"user_id"`
+	UserID       int    `json:"userId"`
 	Age          int    `json:"age"`
 	Name         string `json:"name"`
-	DepartmentID int    `json:"department_id"`
+	DepartmentID int    `json:"departmentId"`
 }
 
 func (e Employee) String() string {
-	return fmt.Sprintf("User ID: %d; Age: %d; Name: %s; Department ID: %d; ", e.UserID, e.Age, e.FirstName, e.DepartmentID)
+	return fmt.Sprintf("User ID: %d; Age: %d; Name: %s; Department ID: %d; ", e.UserID, e.Age, e.Name, e.DepartmentID)
 }

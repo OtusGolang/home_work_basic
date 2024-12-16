@@ -1,30 +1,40 @@
 package reader
 
-import	"encoding/json"
-import	"fmt"
-import	"io"
-import	"os"
+import (
+	"encoding/json"
+	"fmt"
+	"io"
+	"os"
 
-import	"github.com/fixme_my_friend/hw02_fix_app/types"
+	"github.com/fixme_my_friend/hw02_fix_app/types"
+)
 
-
+// ReadJSON читает JSON файл и возвращает массив сотрудников
 func ReadJSON(filePath string, limit int) ([]types.Employee, error) {
-	f, err := os.Open(filePath)
+	// Открываем файл
+	file, err := os.Open(filePath)
 	if err != nil {
-		fmt.Printf("Error: %v", err)
+		return nil, fmt.Errorf("не удалось открыть файл: %w", err)
+	}
+	defer file.Close() // Закрытие файла после завершения функции
+
+	// Читаем содержимое файла
+	bytes, err := io.ReadAll(file)
+	if err != nil {
+		return nil, fmt.Errorf("не удалось прочитать файл: %w", err)
 	}
 
-	byte, err := io.ReadAll(f)
+	// Парсим JSON в структуру данных
+	var employees []types.Employee
+	err = json.Unmarshal(bytes, &employees)
 	if err != nil {
-		fmt.Printf("Error: %v", err)
-		return nil, nil
+		return nil, fmt.Errorf("не удалось распарсить JSON: %w", err)
 	}
 
-	var data []types.Employee
+	// Применяем лимит, если он задан
+	if limit > 0 && len(employees) > limit {
+		employees = employees[:limit]
+	}
 
-	err = json.Unmarshal(bytes, &data)
-
-	res := data
-
-	return res, nil
+	return employees, nil
 }

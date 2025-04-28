@@ -1,4 +1,4 @@
-package init
+package main
 
 import (
 	"github.com/fixme_my_friend/hw02_fix_app/printer"
@@ -7,7 +7,7 @@ import (
 	"fmt"
 )
 
-func init() {
+func main() {
 	var path string = "data.json"
 
 	fmt.Printf("Enter data file path: ")
